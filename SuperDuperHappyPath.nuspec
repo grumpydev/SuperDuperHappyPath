@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>SuperDuperHappyPath</id>
+    <version>0.1.0</version>
+    <authors>Steven Robbins</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Provides directions to the super duper happy path..</description>
+    <projectUrl>https://github.com/NancyFx</projectUrl>
+  </metadata>
+  <files>
+    <file src="*.ps1" target="tools" />
+    <file src="*.psm1" target="tools" />
+    <file src="*.psd1" target="tools" />
+  </files>
+</package>
