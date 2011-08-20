@@ -55,7 +55,7 @@ TypesToProcess = @()
 FormatsToProcess = @()
 
 # Modules to import as nested modules of the module specified in ModuleToProcess
-NestedModules = @('Database.psm1', 'Hosting.psm1', 'Nancy.psm1', 'ViewEngines.psm1', 'Commands.psm1')
+NestedModules = @()
 
 # Functions to export from this module
 FunctionsToExport = '*'
