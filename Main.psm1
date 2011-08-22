@@ -1,22 +1,4 @@
-function SuperDuperHappyPath {
-    Param($Hosting,$ViewEngine,$Database)
-
-    if($input)
-    {
-        foreach($val in $input)
-        {
-            "Hosting: {0}" -f $val
-            "ViewEngine: {0}" -f $args[0]
-            "Database: {0}" -f $args[1]
-        }
-    }
-    else
-    {
-        "Hosting: {0}" -f $Hosting
-        "ViewEngine: {0}" -f $ViewEngine
-        "Database : {0}" -f $Database
-    }
-
+function sdhp ($Hosting, $ViewEngine, $Database) {
     Write-Host "All aboard the super-duper-happy-path!"
 
     if($Hosting)
@@ -78,22 +60,22 @@ function DoDatabase {
     }
 }
 
-Register-TabExpansion 'SuperDuperHappyPath' @{
-    'Hosting' = { 
+Register-TabExpansion 'sdhp' @{
+    Hosting = { 
         "AspNet",
         "Self",
         "Kayak",
         "Wcf"
     }
     
-    'ViewEngine' = { 
+    ViewEngine = { 
         "Spark",
         "Razor",
         "NDjango",
         "DotLiquid"
     }
     
-    'Database' = {
+    Database = {
         "SqlServer",
         "Sqlite",
         "SqlCompact40",
@@ -103,4 +85,4 @@ Register-TabExpansion 'SuperDuperHappyPath' @{
     }
 }
 
-Export-ModuleMember SuperDuperHappyPath
+Export-ModuleMember sdhp

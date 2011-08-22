@@ -4,7 +4,7 @@
 ModuleToProcess = 'SuperDuperHappyPath.psm1'
 
 # Version number of this module.
-ModuleVersion = '0.1.0'
+ModuleVersion = '0.3.0'
 
 # ID used to uniquely identify this module
 GUID = '7F1DC81D-39B6-4FF3-8CBB-3A85E330C300'
