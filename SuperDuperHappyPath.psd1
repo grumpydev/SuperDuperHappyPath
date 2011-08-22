@@ -55,7 +55,7 @@ TypesToProcess = @()
 FormatsToProcess = @()
 
 # Modules to import as nested modules of the module specified in ModuleToProcess
-NestedModules = @()
+NestedModules = @('Main.psm1')
 
 # Functions to export from this module
 FunctionsToExport = '*'
